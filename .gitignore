@@ -6,7 +6,7 @@ samples/
 gulpfile.js
 package-lock.json
 package.json
-libs/
+!libs/
 # IntellijIdea files
 .idea/
 .DS_Store
