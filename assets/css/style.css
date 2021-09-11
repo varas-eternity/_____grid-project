@@ -359,6 +359,11 @@ h1 {
     padding: 18px 0 18px 30px;
     border-bottom-color: rgba(255, 255, 255, 0.25);
     transition: .5s;
+    color: #ffffff;
+    letter-spacing: 0.15em;
+    font-size: 18px;
+    line-height: 1.15;
+    cursor: text;
 }
 
 .communication-form__input::placeholder {
@@ -386,12 +391,17 @@ h1 {
     transition: .5s;
 }
 
-.communication-form__input:hover  {
+.communication-form__input:hover {
     background-color: rgba(255, 255, 255, 0.15);
     border-top: 2px solid rgba(255, 255, 255, 0.1);
     border-right: 2px solid rgba(255, 255, 255, 0.1);
     border-left: 2px solid rgba(255, 255, 255, 0.1);
     border-bottom-color: rgb(255, 255, 255);
+}
+
+.communication-form__input:focus {
+    outline: 0;
+    outline-offset: 0;
 }
 
 .form-item:hover .communication-form__input::placeholder {
@@ -544,7 +554,7 @@ h1 {
     color: #2d3651;
 }
 
-.post-item__link:hover {
+.post-item:hover {
     background-color: #cccccc;
 }
 
@@ -579,7 +589,7 @@ h1 {
     text-align: center;
     padding-top: 50px;
     position: relative;
-    margin-bottom: 40px;
+    margin-bottom: 50px;
     transition: 1s;
 }
 
@@ -605,13 +615,12 @@ h1 {
 }
 
 .footer__text {
-    opacity: 0.8;
     font-weight: 100;
     letter-spacing: 0.33em;
-    color: #637588;
+    color: #707070;
     text-align: center;
     line-height: 1.15;
-    padding: 20px 0 70px 0;
+    padding: 10px 0 70px 0;
 }
 
 .footer__text-grey {
@@ -804,7 +813,8 @@ h1 {
 @media(max-width: 768px) {
 
     .header-menu {
-        background-color:rgba(68, 89, 110, 0.5);
+        background-color: rgba(68, 89, 110, 0.25);
+        box-shadow: -3px 3px 20px -10px #000000;
     }
 
     .header-navbar__list {
@@ -960,11 +970,11 @@ h1 {
 
 @media(max-width: 576px) {
     .header {
-        min-height: 92vh;
+        min-height: 100vh;
     }
 
     .header-overlay {
-        height: 92vh;
+        height: 100vh;
     }
 
     .header-navbar__list--active {
@@ -1111,5 +1121,71 @@ h1 {
 
     .footer__text { 
         padding: 25px 0 65px 0;
+    }
+}
+
+@media(max-width: 575px) {
+    .header-content__title {
+        max-width: 350px;
+        margin-bottom: 30px;
+    }
+
+    .header-content__actions {
+        display: block;
+    }
+
+    .btn--light {
+        margin: 0 auto 20px;
+    }
+
+    .btn--light + .btn--light {
+        margin: 0 auto;
+    }
+
+    .btn--primary {
+        padding: 0;
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+
+    .about-wrapper {
+        justify-content: center;
+    }
+
+    .about-img {
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+    .communication-form__input,
+    .communication-form__btn {
+        width: 100%;
+    }
+
+    .communication-form__fieldset {
+        display: block;
+    }
+
+    .btn--posts {
+        width: 100%;
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+}
+
+@media(max-width: 350px) {
+    .footer__social {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      align-items: center;
+      gap: 20px;
+    }
+} 
+
+@media(max-width: 283px) { 
+    .about-img {
+        width: 100px;
+        height: 175px;
     }
 }
