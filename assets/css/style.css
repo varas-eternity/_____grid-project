@@ -589,10 +589,16 @@ button, input {
     background-color: rgba(45, 54, 81, 0.8);
     border: 2px solid #2d3651;
 }
-
+/* 
 .footer {
     background-color: #2d3651;
     padding: 50px 20px 70px;
+    text-align: center;
+} */
+
+.footer {
+    background-color: #2d3651;
+    padding: 41px 20px 70px;
     text-align: center;
 }
 
@@ -602,15 +608,23 @@ button, input {
     padding: 0 20px;
 }
 
-.footer__social {
+/* .footer__social {
     position: relative;
     display: grid;
     justify-content: center;
     margin-bottom: 40px;
     grid-template-columns: repeat(auto-fit, minmax(50px, max-content));
+} */
+
+.footer__social {
+    position: relative;
+    display: grid;
+    justify-content: center;
+    margin-bottom: 55px;
+    grid-template-columns: repeat(auto-fit, minmax(50px, max-content));
 }
 
-.footer__social::after {
+/* .footer__social::after {
     position: absolute;
     bottom: -20px;
     left: calc(50% - 75px / 2);
@@ -618,11 +632,26 @@ button, input {
     height: 2px;
     content: "";
     background-color: rgba(255, 255, 255, 0.1);
+} */
+
+.footer__social::after {
+    position: absolute;
+    bottom: -22px;
+    left: calc(50% - 75px / 2);
+    width: 75px;
+    height: 2px;
+    content: "";
+    background-color: rgba(255, 255, 255, 0.1);
 }
+
+/* .footer__social a {
+    display: block;
+    padding: 10px;
+} */
 
 .footer__social a {
     display: block;
-    padding: 10px;
+    padding: 8px;
 }
 
 .footer__social a i:hover {
@@ -812,7 +841,7 @@ button, input {
         grid-template-columns: repeat(3, 1fr);
     }
 
-    .footer__container {
+    /* .footer__container {
         padding: 10px 20px;
     }
 
@@ -822,13 +851,15 @@ button, input {
 
     .footer__text { 
         padding: 25px 0 65px 0;
-    }
+    } */
 }
 
 @media(max-width: 768px) { /* 768px - - - 785px */
 
     .header {
-        padding-top: 300px;
+        padding-top: 225px;
+        min-height: 55vh;
+        align-content: space-between;
     }
 
     .header-menu {
@@ -845,7 +876,7 @@ button, input {
         position: absolute;
         top: 100%;
         right: 0;
-        background-color:rgba(68, 89, 110, 0.5);
+        background-color: rgba(68, 89, 110, 0.9);
         text-align: right;
         margin-right: 10px;
     }
@@ -893,7 +924,7 @@ button, input {
     }
 
     .about-information {
-        padding-bottom: 15px;
+        padding-bottom: 37px
     }
 
     .about-information__title {
@@ -907,6 +938,7 @@ button, input {
 
     .about-information__text {
         max-width: 415px;
+        font-size: 16px;
     }
 
     .about-information__text--none,
@@ -916,7 +948,15 @@ button, input {
 
     .line {
         margin-top: 150px;
-        margin-right: 40px;
+        margin-right: 35px;
+    }
+
+    .line-wrapper--1 {
+        padding-left: 10px;
+    }
+
+    .line-wrapper--2 {
+        padding-right: 17px;
     }
 
     .about-img {
@@ -948,7 +988,7 @@ button, input {
         height: 60px;
         padding-right: 30px;
         padding-left: 30px;
-        margin-bottom: 20px;
+        margin-bottom: 0;
     }
 
     .communication-form {
@@ -976,7 +1016,7 @@ button, input {
         height: 60px;
     }
 
-    .footer__container {
+    /* .footer__container {
         padding: 10px 20px;
     }
 
@@ -986,16 +1026,32 @@ button, input {
 
     .footer__text { 
         padding: 25px 0 65px 0;
+    } */
+}
+
+@media (max-height: 690px) {
+    .skills__container {
+      grid-auto-rows: calc(230px - 13.3333333px);
     }
 }
 
 @media(max-width: 576px) { /* 576px - - - 593px */
+    .header {
+        padding-top: 300px;
+        min-height: 100vh;
+        align-content: center;
+    }
+
+    .skill-item__link {
+        margin-top: 7px;
+    }
+
     .header-navbar__list--active {
         display: block;
         position: absolute;
         top: 100%;
         right: 0;
-        background-color:rgba(68, 89, 110, 0.5);
+        background-color: rgba(68, 89, 110, 0.9);
         text-align: right;
         margin-right: 10px;
     }
@@ -1124,7 +1180,7 @@ button, input {
         grid-template-columns: repeat(1, 1fr);
     }
 
-    .footer__container {
+    /* .footer__container {
         padding: 10px 20px;
     }
 
@@ -1134,7 +1190,7 @@ button, input {
 
     .footer__text { 
         padding: 25px 0 65px 0;
-    }
+    } */
 }
 
 @media(max-width: 575px) {
